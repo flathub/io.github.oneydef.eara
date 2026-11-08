@@ -80,4 +80,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/oneydef/eara.git
-        commit: 80b56f90eba4d4a8de7b4ef3682cf59ced18c035
+        commit: 45da341b01297c687acc88afc32028f743d5dd9f
