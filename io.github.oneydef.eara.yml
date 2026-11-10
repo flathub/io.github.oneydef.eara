@@ -6,6 +6,8 @@ sdk: org.gnome.Sdk
 command: io.github.oneydef.eara
 
 finish-args:
+  # RFCOMM needs the host Bluetooth network namespace.
+  - --share=network
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
@@ -79,5 +81,6 @@ modules:
     buildsystem: meson
     sources:
       - type: git
-        url: https://github.com/oneydef/eara.git
-        commit: b8bd81319307795e2e3d3c98c93b1735d135b245
+        url: https://github.com/oneydef/EarA-linux.git
+        tag: v0.6.2
+        commit: 3a5456c85cad4f867a2eea551e55791aaf646f56
